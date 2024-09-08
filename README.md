@@ -1,4 +1,4 @@
-# News Search App By Ramx 📰🔍
+# Australian News Search Portal By Ramx 📰🔍
 
 [![Next.js](https://img.shields.io/badge/Next.js-v13+-blue)](https://nextjs.org/)
 [![Material-UI](https://img.shields.io/badge/Material--UI-v5-blue)](https://mui.com/)
