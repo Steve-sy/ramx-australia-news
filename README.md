@@ -46,3 +46,77 @@ Check installation with:
 ```bash
 node -v
 npm -v
+
+Installation & Setup ⚙️
+
+Follow these steps to run the project locally:
+
+	1.	Clone the repository:
+```bash
+git clone https://github.com/yourusername/news-search-app.git
+cd news-search-app
+
+	2.	Install dependencies:
+Using npm:
+```bash
+npm install
+
+	3.	Get your NewsAPI key:
+	•	Sign up on NewsAPI.org and get your API key.
+	•	Create a .env.local file in the root of your project and add your NewsAPI key:
+```bash
+NEXT_PUBLIC_NEWS_API_KEY=your_api_key_here
+
+	4.	Run the development server:
+Using npm:
+```bash
+npm run dev
+
+Open http://localhost:3000 to view it in the browser.
+
+Usage 🖥️
+
+	1.	Home Page for Australian News: Upon landing on the home page, users will see the latest news about Australia by default, offering a quick overview of current events in Australia.
+	2.	On the homepage, enter the keywords you’d like to search for in the input field.
+	3.	Click on the Search button, and the app will display the latest news articles based on your query.
+	4.	Browse through the results using the pagination buttons.
+	5.	Click on an article to read it on the original news source.
+
+Customization 🎨
+
+	1.	Material-UI Theme: You can easily customize the colors, typography, and spacing using Material-UI’s theme provider. Modify the theme in app/layout.jsx to suit your brand.
+	2.	Loading Animation: The LoadingNews.jsx component is where the loading spinner and animation live. Feel free to tweak this as per your requirements.
+
+API Configuration 🔑
+
+The app uses NewsAPI to fetch news articles. Follow these steps to configure it:
+
+	1.	Go to NewsAPI.org and sign up for a free account.
+	2.	Get your API key and add it to your .env.local file as shown in the Installation section above.
+	3.	Ensure the API call in page.jsx uses your query parameters correctly:
+const response = await fetch(
+  `https://newsapi.org/v2/everything?q=${search}&from=today&sortBy=publishedAt&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
+);
+
+Contributing 🤝
+
+We welcome contributions! To contribute:
+
+	1.	Fork the repository.
+	2.	Create a new branch for your feature or bug fix.
+	3.	Submit a pull request with your changes.
+
+Please ensure you follow the code of conduct and coding guidelines when contributing to this project.
+
+License 📜
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+Acknowledgements 🙌
+
+	•	Next.js for their amazing framework.
+	•	Material-UI for their awesome UI components.
+	•	NewsAPI for providing free access to up-to-date news data.
+
+Thank you for checking out our project! 🌟 If you liked it, please give it a star ⭐ on GitHub.
+
