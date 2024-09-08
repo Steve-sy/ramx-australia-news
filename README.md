@@ -9,6 +9,7 @@ Welcome to the **News Search Application**! This modern web app, built with **Ne
 
 Additionally, our app includes a **Home Page** dedicated to **Australia**, displaying the latest news updates from Australia by default. This makes it an ideal tool for anyone interested in current Australian affairs.
 
+## Check the website: https://aussi-news-ramx.vercel.app/
 ---
 
 ## Features ✨
