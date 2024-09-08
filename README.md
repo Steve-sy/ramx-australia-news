@@ -1,4 +1,4 @@
-# News Search App 📰🔍
+# News Search App By Ramx 📰🔍
 
 [![Next.js](https://img.shields.io/badge/Next.js-v13+-blue)](https://nextjs.org/)
 [![Material-UI](https://img.shields.io/badge/Material--UI-v5-blue)](https://mui.com/)
@@ -46,31 +46,40 @@ Check installation with:
 ```bash
 node -v
 npm -v
+```
 
 Installation & Setup ⚙️
 
 Follow these steps to run the project locally:
 
-	1.	Clone the repository:
+1. Clone the repository:
+
 ```bash
 git clone https://github.com/yourusername/news-search-app.git
 cd news-search-app
+```
 
-	2.	Install dependencies:
+2. Install dependencies:
+
 Using npm:
+
 ```bash
 npm install
+```
 
-	3.	Get your NewsAPI key:
-	•	Sign up on NewsAPI.org and get your API key.
-	•	Create a .env.local file in the root of your project and add your NewsAPI key:
+3. Get your NewsAPI key:
 ```bash
+•Sign up on NewsAPI.org and get your API key.
+•Create a .env.local file in the root of your project and add your NewsAPI key:
 NEXT_PUBLIC_NEWS_API_KEY=your_api_key_here
+```
 
-	4.	Run the development server:
+4. Run the development server:
+
 Using npm:
 ```bash
 npm run dev
+```
 
 Open http://localhost:3000 to view it in the browser.
 
