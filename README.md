@@ -70,8 +70,8 @@ npm install
 3. Get your NewsAPI key:
 ```bash
 •Sign up on NewsAPI.org and get your API key.
-•Create a .env.local file in the root of your project and add your NewsAPI key:
-NEXT_PUBLIC_NEWS_API_KEY=your_api_key_here
+•Go to news/page.jsx file in the project and add your NewsAPI key:
+your_api_key_here
 ```
 
 4. Run the development server:
@@ -86,7 +86,7 @@ Open http://localhost:3000 to view it in the browser.
 Usage 🖥️
 
 	1.	Home Page for Australian News: Upon landing on the home page, users will see the latest news about Australia by default, offering a quick overview of current events in Australia.
-	2.	On the homepage, enter the keywords you’d like to search for in the input field.
+	2.	On the search page, enter the keywords you’d like to search for in the input field.
 	3.	Click on the Search button, and the app will display the latest news articles based on your query.
 	4.	Browse through the results using the pagination buttons.
 	5.	Click on an article to read it on the original news source.
@@ -101,10 +101,10 @@ API Configuration 🔑
 The app uses NewsAPI to fetch news articles. Follow these steps to configure it:
 
 	1.	Go to NewsAPI.org and sign up for a free account.
-	2.	Get your API key and add it to your .env.local file as shown in the Installation section above.
+	2.	Get your API key and add it to your news/page.jsx file as shown in the Installation section above.
 	3.	Ensure the API call in page.jsx uses your query parameters correctly:
 const response = await fetch(
-  `https://newsapi.org/v2/everything?q=${search}&from=today&sortBy=publishedAt&apiKey=${process.env.NEXT_PUBLIC_NEWS_API_KEY}`
+  `https://newsapi.org/v2/everything?q=${search}&from=today&sortBy=publishedAt&apiKey=${API_KEY}`
 );
 
 Contributing 🤝
